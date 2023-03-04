@@ -15,7 +15,7 @@ public class Ejercicio318 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Jhojan!");
+        System.out.println("tnjg4rymh,!");
         int x = 10;
         System.out.println("por cada "+x+" estudiantes de POO, "+x/2+" son la mitad de ellos");
     }
