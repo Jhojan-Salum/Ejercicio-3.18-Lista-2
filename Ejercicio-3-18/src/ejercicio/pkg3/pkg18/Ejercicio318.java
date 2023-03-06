@@ -6,19 +6,32 @@ package ejercicio.pkg3.pkg18;
 
 /**
  *
- * @author kkmie
+ * @author jteheranm
  */
 public class Ejercicio318 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Nothing wrong with me");
-        int x = 10;
-        
-        System.out.println("por cada "+x+" estudiantes de POO, "+x/2+" son la mitad de ellos");
+        /* Se tiene la siguiente información de un empleado: 
+            · código del empleado, 
+            · nombres, 
+            · número de horas trabajadas al mes, 
+            · valor hora trabajada, 
+            · porcentaje de retención en la fuente. 
+            Haga un algoritmo que muestre: código, nombres, salario bruto y salario neto. */
+        Scanner entrada = new Scanner(System.in);
+        int codigo_empleado, horas_trabajadas;
+        String nombres;
+        double salario_hora;
+        double datos_salario[];
+
+        System.out.println("Ingrese el código del empleado");
+        codigo_empleado = entrada.nextInt();
+        System.out.println("Ingrese el número de horas trabajadas");
+        horas_trabajadas = entrada.nextInt();
+
+        System.out.println("Ingrese el salario por hora");
+        salario_hora = entrada.nextDouble();
+
     }
     static double[] datos_salario_semanal( double salario_hora, int horas){
         double retencion_fuente = 0.125;
