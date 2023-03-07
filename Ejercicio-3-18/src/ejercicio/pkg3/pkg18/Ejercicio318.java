@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ejercicio.pkg3.pkg18;
-import java.util.Scanner
+import java.util.Scanner;
 
 /**
  *
@@ -20,17 +20,17 @@ public class Ejercicio318 {
             · porcentaje de retención en la fuente. 
             Haga un algoritmo que muestre: código, nombres, salario bruto y salario neto. */
         Scanner entrada = new Scanner(System.in);
-        int codigo;
-        Str nombre;
-        double horas_trabajo, salario_hora;
+        int codigo, horas_trabajo;
+        double salario_hora;
 
         /* Peticion de datos al usuario */
+        
+        System.out.println("Ingrese el nombre del empleado:");
+        String nombre = entrada.nextLine();
         System.out.println("Ingrese el codigo del empleado:");
         codigo = entrada.nextInt();
-        System.out.println("Ingrese el nombre del empleado:");
-        nombre = entrada.nextStr();
         System.out.println("Ingrese las horas de trabajo del empleado:");
-        horas_trabajo = entrada.nextDouble();
+        horas_trabajo = entrada.nextInt();
         System.out.println("Ingrese el salario por hora del empleado:");
         salario_hora = entrada.nextDouble();
 
