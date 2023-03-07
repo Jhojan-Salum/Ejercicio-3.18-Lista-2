@@ -9,8 +9,11 @@ package parte.pkg2.objetosgeom;
  * @author kkmie
  */
 public class FiguraGeometrica {
-    double perimeter;
-    double area;
+    /*Atributos protegidos, asi la unica forma de acceder a ellos es a traves de sus metodos,
+    evitando imprimir valores desactualizados.
+    */
+    protected double perimeter;
+    protected double area;
 
     public double area(){
         this.area = 0;
