@@ -22,6 +22,7 @@ public class Ejercicio318 {
         Scanner entrada = new Scanner(System.in);
         int codigo, horas_trabajo;
         double salario_hora;
+        byte opcion;
 
         /* Peticion de datos al usuario */
         
@@ -33,6 +34,14 @@ public class Ejercicio318 {
         horas_trabajo = entrada.nextInt();
         System.out.println("Ingrese el salario por hora del empleado:");
         salario_hora = entrada.nextDouble();
+        System.out.println("El porcentaje de retencion en la fuente es de" + (empleado.retencion_fuente*100) + "%");
+        System.out.println("Desea cambiar el porcentaje de retencion en la fuente? (1 = Si, 2 = No)");
+        opcion = entrada.nextByte();
+        if (opcion == 1) {
+            System.out.println("Ingrese el nuevo porcentaje de retencion en la fuente:");
+            double retencion = entrada.nextDouble();
+            empleado.cambiar_retencion(retencion);
+        }
 
         /* Creacion del objeto empleado */
         empleado empleado = new empleado(codigo, nombre, horas_trabajo, salario_hora);

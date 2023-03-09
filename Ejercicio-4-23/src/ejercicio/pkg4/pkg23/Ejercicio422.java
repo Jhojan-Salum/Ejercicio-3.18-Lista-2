@@ -8,7 +8,7 @@ package ejercicio.pkg4.pkg23;
  *
  * @author kkmie
  */
-public class Ejercicio423 {
+public class Ejercicio422 {
 
     /**
      * @param args the command line arguments

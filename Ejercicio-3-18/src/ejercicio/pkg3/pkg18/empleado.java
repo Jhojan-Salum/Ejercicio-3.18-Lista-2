@@ -24,6 +24,10 @@ public class empleado {
         this.horas_trabajadas = horas_trabajadas;
         this.salario_hora = salario_hora;
     }
+
+    public void cambiar_retencion(double retencion_fuente){
+        this.retencion_fuente = retencion_fuente;
+    }
     
     public void calcular_salario(){
         this.salario_bruto = this.salario_hora * this.horas_trabajadas;
