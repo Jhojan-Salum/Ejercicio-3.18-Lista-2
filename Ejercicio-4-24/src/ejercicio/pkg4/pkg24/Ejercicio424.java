@@ -5,7 +5,6 @@
 
 package ejercicio.pkg4.pkg24;
 import java.util.Scanner;
-8
 /**
  *
  * @author Jteheranm
