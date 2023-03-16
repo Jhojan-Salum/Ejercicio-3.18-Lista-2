@@ -26,13 +26,13 @@ public Triangulo_rectangulo(double base, double altura){
 
 public void determinarTipoTriangulo(){
     if((base==altura)&&(base==calcularHipotenusa())&&(altura == calcularHipotenusa())){
-        System.out.println("Es un triángulo equilatero");
+        System.out.println("Es un triangulo equilatero");
       }
     else if((base != altura)&&(base != calcularHipotenusa())&&(altura != calcularHipotenusa())){
-        System.out.println("Es un triángulo escaleno");
+        System.out.println("Es un triangulo escaleno");
       }
     else {
-        System.out.println("Es un triángulo isósceles ");
+        System.out.println("Es un triangulo isosceles ");
     }
 }
 }
