@@ -40,6 +40,16 @@ public class Parte2ObjetosGeom {
         System.out.println("Radio: " + ci1.radio);
         System.out.println("Area: " + ci1.area());
         System.out.println("Perimetro: " + ci1.perimeter());
+        
+       // Testing the Subclass Triangulo
+        Triangulo_rectangulo tr1 = new Triangulo_rectangulo(2, 3);
+        System.out.println("Triángulo Rectangulo");
+        System.out.println("Base: " + tr1.base);
+        System.out.println("Altura: " + tr1.altura);
+        System.out.println("Area: " + tr1.area());
+        System.out.println("Perimetro: " + tr1.perimeter());
+
+        
 
     }
     

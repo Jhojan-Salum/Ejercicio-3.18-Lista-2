@@ -2,19 +2,21 @@
 package parte.pkg2.objetosgeom;
 
 public class Triangulo_rectangulo extends FiguraGeometrica {
-    int base;
-    int altura;
+    double base;
+    double altura;
     
-public void Tiangulo_rectangulo(int base, int altura){
+public Triangulo_rectangulo(double base, double altura){
    
     this.base = base;
     this.altura = altura;
 }
-    double calcularArea(){
+    @Override
+    public double area(){
       return (base * altura/2);
      
 }
-    double calcularPerimetro(){
+    @Override
+    public double perimeter(){
       return (base + altura + calcularHipotenusa());
      
 }
@@ -22,7 +24,7 @@ public void Tiangulo_rectangulo(int base, int altura){
       return Math.pow(base*altura + altura*altura, 0.5);
  }
 
-void determinarTipoTriangulo(){
+public void determinarTipoTriangulo(){
     if((base==altura)&&(base==calcularHipotenusa())&&(altura == calcularHipotenusa())){
         System.out.println("Es un triángulo equilatero");
       }
