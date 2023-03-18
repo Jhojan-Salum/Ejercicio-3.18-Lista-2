@@ -9,7 +9,7 @@ package ejercicio.pkg4.pkg15;
  * @author Jhojan
  */
 public class Contador {
-
+    //Método que cuenta la cantidad de veces que se repite un número en un arreglo
     static int Contar(double[] Lista, double Item) {
         int Contador = 0;
         for (int i = 0; i < Lista.length; i++) {

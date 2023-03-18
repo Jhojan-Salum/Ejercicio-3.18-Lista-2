@@ -31,9 +31,11 @@ public class Ejercicio415 {
         System.out.println("Ingrese el peso de la bola D");
         Lista[3] = sc.nextDouble();
         
+        //Ciclo que recorre el arreglo y compara si el número se repite una vez
         for (int i = 0; i < Lista.length; i++) {
 
             if (Contador.Contar(Lista, Lista[i]) == 1) {
+                //Si el numero se repite una vezm es decir, es el unico diferente, se compara con uno arbitrario
                 if (Lista[Math.abs(i-1)]<Lista[i]) {
                     System.out.println("La bola "+ Respuestas[i]+" es diferente y la mas pesada");
                 }
