@@ -32,6 +32,7 @@ public class Grado2 extends Polinomio{
             this.raices[1] = (-b - Math.sqrt(discriminante)) / (2 * a);
         }else if(discriminante == 0){
             this.raices[0] = -b / (2 * a);
+            this.raices[1] = -b / (2 * a);
         }else{
            for (int i = 0; i < this.raices.length; i++) {
                 this.raices[i] = Double.NaN;
