@@ -19,14 +19,20 @@ public class comparador {
             esfera esfera3 = new esfera(peso3);
             
             //Comparacion de los pesos de las esferas, se devuelve la esfera o esferas con mayor peso
-            if (esfera1.get_peso() > esfera2.get_peso() && esfera1.get_peso() > esfera3.get_peso()) {
-                System.out.println("La esfera 1 es la que tiene mayor peso");
-            } else if (esfera2.get_peso() > esfera1.get_peso() && esfera2.get_peso() > esfera3.get_peso()) {
-                System.out.println("La esfera 2 es la que tiene mayor peso");
-            } else if (esfera3.get_peso() > esfera1.get_peso() && esfera3.get_peso() > esfera2.get_peso()) {
-                System.out.println("La esfera 3 es la que tiene mayor peso");
-            } else {
-                System.out.println("Las esferas tienen el mismo peso");
+            if (esfera1.peso > esfera2.peso && esfera1.peso > esfera3.peso) {
+                System.out.println("La esfera 1 es la de mayor peso");
+            } else if (esfera2.peso > esfera1.peso && esfera2.peso > esfera3.peso) {
+                System.out.println("La esfera 2 es la de mayor peso");
+            } else if (esfera3.peso > esfera1.peso && esfera3.peso > esfera2.peso) {
+                System.out.println("La esfera 3 es la de mayor peso");
+            } else if (esfera1.peso == esfera2.peso && esfera1.peso == esfera3.peso) {
+                System.out.println("Las esferas 1, 2 y 3 tienen el mismo peso");
+            } else if (esfera1.peso == esfera2.peso && esfera1.peso > esfera3.peso) {
+                System.out.println("Las esferas 1 y 2 tienen el mismo peso y son las de mayor peso");
+            } else if (esfera1.peso == esfera3.peso && esfera1.peso > esfera2.peso) {
+                System.out.println("Las esferas 1 y 3 tienen el mismo peso y son las de mayor peso");
+            } else if (esfera2.peso == esfera3.peso && esfera2.peso > esfera1.peso) {
+                System.out.println("Las esferas 2 y 3 tienen el mismo peso y son las de mayor peso");
             }
         }
 }
