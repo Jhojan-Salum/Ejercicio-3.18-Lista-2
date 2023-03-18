@@ -16,7 +16,7 @@ public class Polinomio {
 
     /*Constructor por defecto*/
     /* Los coeficientes se leen de izquierda a derecha, y su orden es 
-    descendente*/
+    descendente respecto a su grado*/
 
     public Polinomio(int grado, double[] coeficientes) {
         this.grado = grado;
